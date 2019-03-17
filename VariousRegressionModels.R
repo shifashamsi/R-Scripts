@@ -9,7 +9,7 @@ model1= lm(y~ x1 + x2, data=data5)# measure rmse
 
 model2 = glm(y~ x1 + x2, data=data5)# confusion matrix
 
-#Classification DT
+#Classification DT for training
 
 model3= rpart(y~x1+x2, data=data5, method='class') # for class
 
@@ -17,5 +17,5 @@ model3= rpart(y~x1+x2, data=data5, method='class') # for class
 
 model4= rpart(y~x1+x2, data=data5, method='annova') #for number
 
-#
+#test the trained model 
 predict(model, newdata=, type='response'/'class')
