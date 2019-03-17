@@ -93,8 +93,8 @@ inspect(rules3)
 rules4 = apriori (data=Groceries, parameter=list (supp=0.001,conf = 0.4), appearance = list (default="rhs",lhs=c('tropical fruit','herbs')), control = list (verbose=F))
 inspect(rules4[1:5])
 inspect(rules4)
-plot(subset4) 
-
+plot(subset4)
+??arules
 
 #legend to filter
 #legend to condition commands 
